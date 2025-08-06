@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Exercicio</title>
+    <style>
+        body {
+            background: rgb(60, 60, 252);
+        }
+
+        header {
+            text-align: center;
+            color: white;
+        }
+
+        section {
+            background: white;
+            width: 500px;
+            height: 300px;
+            border-radius: 10px;
+            margin: auto;
+            padding: 20px;
+            box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.364);
+        }
+
+        #d1{
+            padding: 10px;
+        }
+
+        #d2 {
+            padding: 10px;
+        }
+
+        #d3 {
+            padding: 10px;
+        }
+
+        #butao {
+            display: block;
+            margin-top: 15px;
+            
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>VAMOS CONTAR</h1>
+    </header>
+    <section>
+        <div id="d1">
+            <label for="Início">Início:</label>
+            <input type="number" id="inicio">
+        </div>
+        <div id="d2">
+            <label for="Fim">Fim:</label>
+            <input type="number" id="fim">
+        </div>
+        <div id="d3">
+            <label for="Passo">Passo:</label>
+            <input type="number" id="passo">
+            <input type="button" value="Contar" id="butao" onclick="contar()">
+        </div>
+        <div id="res">
+            <p>Contando:</p>
+        </div>
+    </section>
+    <script src="script.js"></script>
+</body>
+</html>
